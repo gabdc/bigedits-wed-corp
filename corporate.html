@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Corporate Video Editing Services</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+            integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+            crossorigin="anonymous" />
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.4/tailwind.min.css">
+    </head>
+
+    <body>
+        <section>
+            <nav class="absolute z-30 flex flex-row items-center justify-between w-full h-24 px-4 bg-white border-b-8 border-yellow-400 md:h-28 md:px-12">
+                <div class="flex justify-start">
+                    <img src="pictures/logo01.png" class="w-auto md:h-20 h-18" alt="Company Logo">
+                </div>
+                <div class="flex flex-row flex-wrap items-center justify-center invisible text-gray-900 uppercase md:space-x-3 lg:visible pro:hidden">
+                    <a href="#" class=" text-md  hover:text-[#00a7e0] focus:text-gray-400 focus:outline-none">home</a>
+                    <button type="button" class="uppercase hover:text-[#00a7e0] focus:text-gray-400" onclick="toggleElem('services_nav')">our services<i class="px-2 fas fa-caret-down" style="color:#FF1493;"></i></button>    
+                    <button type="button" class="uppercase hover:text-[#00a7e0] focus:text-gray-400" onclick="toggleElem('portfolio_nav')">our portfolio<i class="px-2 fas fa-caret-down" style="color:#FF1493;"></i></button>    
+                    <button type="button" class="uppercase hover:text-[#00a7e0] focus:text-gray-400" onclick="toggleElem('connect_nav')">let's connect<i class="px-2 fas fa-caret-down" style="color:#FF1493;"></i></button>    
+                    <button type="button" class="uppercase hover:text-[#00a7e0] focus:text-gray-400" onclick="toggleElem('account_nav')">my account<i class="px-2 fas fa-caret-down" style="color:#FF1493;"></i></button>       
+                </div>
+                <div class="block md:space-x-20 lg:hidden pro:block pro:pr-10">
+                    <button type="button" class="text-gray-700 text-xl focus:text-[#00a7e0] active:hover:text-[#00a7e0] focus:outline-none" onclick="toggleElem('sm_navi')">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
+            <div id="services_nav" class="absolute z-50 hidden p-2 text-gray-900 uppercase -translate-x-12 bg-white border-4 border-yellow-600 rounded-xl text-md top-20 right-96 h-96 w-52">
+                <ul class="p-2 space-y-4 text-center">
+                    <li><a href="wedding.html" class="hover:text-[#00a7e0]">wedding video editing</a></li>
+                    <li><a href="corporate.html"class="hover:text-[#00a7e0]">corporate video editing</a></li>
+                    <li><a href="family.html"class="hover:text-[#00a7e0]">family video editing</a></li>
+                    <li><a href="youtube.html"class="hover:text-[#00a7e0]">youtube content video editing</a></li>
+                    <li><a href="logo-animation.html"class="hover:text-[#00a7e0]">logo animation</a></li>
+                    <li><a href="virtualStage.html"class="hover:text-[#00a7e0]">virtual stage</a></li>
+                    <li><a href="graphic.html"class="hover:text-[#00a7e0]"> graphic design</a></li>
+                </ul>
+            </div>
+            <div id="portfolio_nav" class="absolute z-50 hidden p-2 text-gray-900 uppercase bg-white border-4 border-yellow-600 rounded-xl text-md top-20 right-72 h-96 w-52">
+                <ul class="p-2 text-center">
+                    <li><a href=""class="hover:text-[#00a7e0]">our work</a></li>
+                </ul>
+            </div>
+            <div id="connect_nav" class="absolute z-50 hidden p-2 text-gray-900 uppercase bg-white border-4 border-yellow-600 rounded-xl text-md top-20 right-32 h-96 w-52">
+                <ul class="p-2 text-center ">
+                    <li><a href="faqs.html" class="hover:text-[#00a7e0]">faqs</a></li>
+                </ul>
+            </div>
+            <div id="account_nav" class="absolute z-50 hidden w-48 p-2 text-gray-900 uppercase bg-white border-4 border-yellow-600 rounded-xl text-md top-20 right-6 h-96">
+                <ul class="p-2 space-y-4 text-center">
+                    <li><a href="register1.html" class="hover:text-[#00a7e0]"></a>register</li>
+                    <li><a href="login1.html" class="hover:text-[#00a7e0]"></a>login</li>
+                </ul>
+            </div>
+            <nav id="sm_navi" class="absolute inset-0 z-50 hidden w-full h-full p-2 text-gray-900 text-md md:text-xl">
+                <div class="flex flex-col items-center justify-start w-auto h-auto p-6 bg-white border-2 border-yellow-600 shadow-xl rounded-xl">
+                    <div class="flex flex-row items-center justify-between w-full">
+                        <img src="pictures/logo01.png" class="w-auto h-8" alt="Company Logo">
+                        <button type="button" class=" text-xl focus:text-[#00a7e0] active:hover:text-[#00a7e0] focus:outline-none" onclick="toggleElem('sm_navi')">
+                            <i class="fas fa-times-circle"></i>
+                        </button>
+                    </div>
+                    <div class="flex flex-col items-start justify-start w-full p-2 mt-2 space-y-2 uppercase border-t-2 border-b-2 border-yellow-600 border-dashed">
+                        <a href="#" class="hover:text-[#00a7e0] focus:outline-none">home</a>
+                        <button type="button" class="w-full uppercase text-left focus:bg-[#00a7e0] focus:text-white" onclick="toggleElem('services_snav')">our services<i class="px-2 fas fa-caret-down" style="color:#FF1493;"></i></button>
+                            <div id="services_snav" class="hidden">
+                                <ul id="services_snav" class="space-y-2 list-disc list-inside ">
+                                    <li><a href="wedding.html">wedding video editing</a></li>
+                                    <li><a href="corporate.html">corporate video editing</a></li>
+                                    <li><a href="family.html">family video editing</a></li>
+                                    <li><a href="youtube.html">youtube content video editing</a></li>
+                                    <li><a href="logo-animation.html">logo animation</a></li>
+                                    <li><a href="virtualStage.html">virtual stage</a></li>
+                                    <li><a href="graphic.html"> graphic design</a></li>
+                                </ul>
+                            </div>
+                        <button type="button" class="w-full uppercase text-left rounded-lg focus:bg-[#00a7e0] focus:text-white" onclick="toggleElem('portfolio_snav')">our portfolio<i class="px-2 fas fa-caret-down" style="color:#FF1493;"></i></button>
+                            <div id="portfolio_snav" class="hidden">
+                                <ul class="list-disc list-inside">
+                                    <li><a href="">our work</a></li>
+                                </ul>
+                            </div>
+                        <button type="button" class="w-full uppercase text-left rounded-lg focus:bg-[#00a7e0] focus:text-white" onclick="toggleElem('connect_snav')">let's connect<i class="px-2 fas fa-caret-down" style="color:#FF1493;"></i></button>
+                            <div id="connect_snav" class="hidden">
+                                <ul class="list-disc list-inside">
+                                    <li><a href="faqs.html">faqs</a></li>
+                                </ul>
+                            </div>
+                        <button type="button" class="w-full uppercase text-left rounded-lg focus:bg-[#00a7e0] focus:text-white" onclick="toggleElem('account_snav')">my account<i class="px-2 fas fa-caret-down" style="color:#FF1493;"></i></button>
+                            <div id="account_snav" class="hidden">
+                                <ul class="list-disc list-inside">
+                                    <li><a href="register1.html"></a>register</li>
+                                    <li><a href="login1.html"></a>login</li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </nav>
+            <div id="navigation" class="absolute z-10 hidden w-screen p-6 bg-white">
+                <div class="flex flex-col">
+                    <a href="landing.html"
+                        class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
+                        <span>Home</span>
+                    </a>
+                    <a href="#" class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
+                        <span class="">Video Editing Services</span>
+                    </a>
+                    <a href="#" class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
+                        <span class="">Our Work</span>
+                    </a>
+                    <a href="#" class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
+                        <span class="">View Pricing</span>
+                    </a>
+                    <a href="#" class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
+                        <span class="">My Account</span>
+                    </a>
+                    <a href="#" class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
+                        <span class="">Shop</span>
+                    </a>
+                    <a href="#" class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
+                        <span class="">Contact</span>
+                    </a>
+                    <a href="#" class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
+                        <span class="">Blog</span>
+                    </a>
+                </div>
+            </div>
+
+            <section class="relative flex items-start justify-start w-full h-screen bg-right border-b-8 border-yellow-400 md:items-center md:bg-center md:bg-cover px-72"
+                style="background-image: url('pictures/corporate/header-bg.png')">
+                <div class="flex flex-col w-auto text-left text-white md:w-full md:space-y-8">
+                    <h1 class="text-5xl font-bold md:text-8xl">
+                        CORPORATE VIDEO
+                    </h1>
+                    <h2 class="text-5xl font-bold md:text-8xl">
+                        EDITING
+                    </h2>
+                    <p class="w-full text-xl text-justify md:w-1/2 md:text-3xl">
+                        Lorem ipsum dolor sit amet si, consecteturtact adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. incididunt ut labore et dolore
+                        magna aliqua. 
+                    </p>
+                </div>
+            </section>
+
+            <section class="flex flex-col items-start justify-start py-12">
+                <div class="flex items-start justify-start px-4 md:px-52">
+                    <h2 class="text-3xl font-extrabold text-gray-900 md:py-8 md:text-6xl">
+                        Latest Works</h2>
+                </div>
+                <div class="grid w-full h-full grid-cols-1 px-4 md:grid-cols-3 md:px-44">
+                    <div class="px-8 py-4 space-y-4">
+                        <div class="flex items-start justify-start">
+                            <img src="pictures/corporate/lw-1.png" alt="reedit" class="w-auto md:w-full md:-ml-1 md:h-48 md:m-6 h-28">
+                        </div>
+                        <div class="space-y-4">
+                            <h2 class="text-xl font-bold uppercase"> Lorem ipsum dolor sit consectetur</h2>
+                            <p class="text-md">
+                                Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum
+                                cupiditate veritatis in accusamus quisquam. Lorem ipsum dolor sit amet consect
+                                adipisicing elit.
+                                Possimus magnam voluptatum cupiditate veritatis in accusamus quisquam.
+                            </p>
+                            <button class="flex items-center justify-center h-12 space-x-2">
+                                <i class="fas fa-arrow-alt-circle-right fa-2x" style="color:#000000;"></i>
+                                <h2 class="text-lg font-semibold uppercase">Learn More</h2>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="px-8 py-4 space-y-4 ">
+                        <div class="flex items-start justify-start">
+                            <img src="pictures/corporate/lw-2.png" alt="reedit" class="w-auto md:w-full md:-ml-1 md:h-48 md:m-6 h-28">
+                        </div>
+                        <div class="space-y-4">
+                            <h2 class="text-xl font-bold uppercase"> Lorem ipsum dolor sit consectetur</h2>
+                            <p class="text-md">
+                                Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum
+                                cupiditate veritatis in accusamus quisquam. Lorem ipsum dolor sit amet consect
+                                adipisicing elit.
+                                Possimus magnam voluptatum cupiditate veritatis in accusamus quisquam.
+                            </p>
+                            <button class="flex items-center justify-center h-12 space-x-2">
+                                <i class="fas fa-arrow-alt-circle-right fa-2x" style="color:#000000;"></i>
+                                <h2 class="text-lg font-semibold uppercase">Learn More</h2>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="px-8 py-4 space-y-4">
+                        <div class="flex items-start justify-start">
+                            <img src="pictures/corporate/lw-3.png" alt="reedit" class="w-auto md:w-full md:-ml-1 md:h-48 md:m-6 h-28">
+                        </div>
+                        <div class="space-y-4">
+                            <h2 class="text-xl font-bold uppercase"> Lorem ipsum dolor sit consectetur</h2>
+                            <p class="text-md">
+                                Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum
+                                cupiditate veritatis in accusamus quisquam. Lorem ipsum dolor sit amet consect
+                                adipisicing elit.
+                                Possimus magnam voluptatum cupiditate veritatis in accusamus quisquam.
+                            </p>
+                            <button class="flex items-center justify-center h-12 space-x-2">
+                                <i class="fas fa-arrow-alt-circle-right fa-2x" style="color:#000000;"></i>
+                                <h2 class="text-lg font-semibold uppercase">Learn More</h2>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="flex flex-col items-center justify-center w-full px-8 py-8 bg-yellow-200 md:px-64">
+                <div class="flex flex-col items-center justify-center w-full py-6 text-gray-900 md:py-12">
+                    <div class="px-64 space-y-4 text-2xl text-center">
+                        <h2 class="text-xl font-extrabold uppercase md:text-5xl">
+                            Our Services
+                        </h2>
+                        <p class="text-xl">
+                            Our dynamic team of creative professionals and video editors operate on a customer-centric
+                            philosophy. We put your point of view front and center.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 py-12 text-xl text-center text-white md:grid-cols-2">
+                        <div class="flex flex-col items-center justify-center w-full space-y-12 bg-center h-96"
+                            style="background-image: url('pictures/corporate/os-1.png')">
+                            <div class="space-y-2">
+                                <i class="fas fa-chalkboard-teacher fa-4x"></i>
+                                <h2 class="text-base">Conference and Seminars </h2>
+                            </div>
+                            <div class="px-32 text-md">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna liqua.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col items-center justify-center w-full space-y-12 bg-center h-96"
+                            style="background-image: url('pictures/corporate/os-2.png')">
+                            <div class="space-y-2">
+                                <i class="fab fa-connectdevelop fa-4x"></i>
+                                <h2 class="text-base">Rebranding Existing Video </h2>
+                            </div>
+                            <div class="px-32 text-md">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna liqua.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col items-center justify-center w-full space-y-12 bg-center h-96"
+                            style="background-image: url('pictures/corporate/os-3.png')">
+                            <div class="space-y-2">
+                                <i class="fas fa-video fa-4x"></i>
+                                <h2 class="text-base">Interviews and chat shows </h2>
+                            </div>
+                            <div class="px-32 text-md">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna liqua.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col items-center justify-center w-full space-y-12 bg-center h-96"
+                            style="background-image: url('pictures/corporate/os-4.png')">
+                            <div class="space-y-2">
+                                <i class="fas fa-people-carry fa-4x"></i>
+                                <h2 class="text-base">Product and Services demos </h2>
+                            </div>
+                            <div class="px-32 text-md">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna liqua.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col items-center justify-center w-full space-y-12 bg-center h-96"
+                            style="background-image: url('pictures/corporate/os-5.png')">
+                            <div class="space-y-2">
+                                <i class="fas fa-podcast fa-4x"></i>
+                                <h2 class="text-base">Podcast and audio editing</h2>
+                            </div>
+                            <div class="px-32 text-md">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna liqua.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col items-center justify-center w-full space-y-12 bg-center h-96"
+                            style="background-image: url('pictures/corporate/os-6.png')">
+                            <div class="space-y-2">
+                                <i class="fas fa-laptop-house fa-4x"></i>
+                                <h2 class="text-base">Real Estate video editing</h2>
+                            </div>
+                            <div class="px-32 text-md">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna liqua.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col items-center justify-center w-full space-y-12 bg-center h-96"
+                            style="background-image: url('pictures/corporate/os-7.png')">
+                            <div class="space-y-2">
+                                <i class="fas fa-warehouse fa-4x"></i>
+                                <h2 class="text-base">Industrial and shop floor videos</h2>
+                            </div>
+                            <div class="px-32 text-md">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna liqua.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col items-center justify-center w-full space-y-12 bg-center h-96"
+                            style="background-image: url('pictures/corporate/os-8.png')">
+                            <div class="space-y-2">
+                                <i class="far fa-file-video fa-4x"></i>
+                                <h2 class="text-base"> Instruction videos editing</h2>
+                            </div>
+                            <div class="px-32 text-md">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna liqua.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="relative flex items-center justify-end w-full h-screen overflow-y-auto bg-center md:bg-cover px-72"
+                style="background-image: url('pictures/corporate/wcu.png')">
+                <div class="flex flex-col items-start justify-start w-1/2 mt-32 space-y-8 text-left text-white">
+                    <h2 class="text-3xl font-bold md:text-7xl">
+                        Why Choose Us?
+                    </h2>
+                    <p class="text-2xl">
+                        Our dynamic team of creative professionals and video editors operate on a customer-centric
+                        philosophy. We put your point of view front and center. Because no matter the angle or the
+                        composition, we believe that its all about You. Our job is to help you create beautiful stories
+                        that make an impact.
+                    </p>
+                </div>
+            </section>
+
+            <footer class="flex items-center justify-center py-4 bg-gray-600 md:px-32">
+                <div class="flex flex-col items-center justify-center space-y-4">
+                    <div>
+                        <img src="pictures/logo-1.png" alt="logo" class="w-auto h-14">
+                    </div>
+                    <div class="flex flex-col items-center justify-center space-x-0 text-xl font-semibold text-white md:flex-row md:space-x-8">
+                        <a href="#" class="hover:underline hover:text-gray-700 ">
+                            <span class="uppercase">home</span>
+                        </a>
+                        <a href="#" class="hover:underline hover:text-gray-700">
+                            <span class="uppercase">our services</span>
+                        </a>
+                        <a href="#" class="hover:underline hover:text-gray-700">
+                            <span class="uppercase">our portfolio</span>
+                        </a>
+                        <a href="#" class="hover:underline hover:text-gray-700">
+                            <span class="uppercase">let's connect</span>
+                        </a>
+                        <a href="#" class="hover:underline hover:text-gray-700">
+                            <span class="uppercase">your profile</span>
+                        </a>
+                        
+                    </div>
+                    <div class="flex flex-row items-center justify-center space-x-8 text-lg">
+                        <img src="pictures/corporate/fb.png" alt="fb" class="w-auto h-10">
+                        <img src="pictures/corporate/yt.png" alt="yt" class="w-auto h-10">
+                        <img src="pictures/corporate/vm.png" alt="vm" class="w-auto h-10">
+                        <img src="pictures/corporate/be.png" alt="be" class="w-auto h-10">
+                    </div>
+                    <div class="flex flex-col items-center justify-center space-y-2">
+                        <h2 class="text-md"> Make safe payment with</h2>
+                        <img src="pictures/footer-paypal.png" alt="paypal" class="w-12 h-6">
+                    </div>
+                </div>
+            </footer>
+
+        </section>
+
+
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin=" anonymous "></script>
+        <script src="./script.js "></script>
+        <script>
+            function toggleElem(paramID)
+                {
+                    document.getElementById(paramID).classList.toggle('hidden');
+                    document.getElementById(paramID).classList.toggle('block');
+                }
+        </script>
+    </body>
+
+
+</html>

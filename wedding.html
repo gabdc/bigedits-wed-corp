@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Wedding Video Editing Services</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+        <link href="/build/tailwind.css" rel="stylesheet"> 
+        <link href="/build/breakpoint.css" rel="stylesheet">
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.4/tailwind.min.css">
+    </head>
+    <style>
+        @font-face {
+                    font-family: aladin;
+                    src: url('Aladin.ttf');
+                }
+                .font-aladin {
+                    font-family: aladin !important;
+                }
+    </style>
+    <body>
+        <section>
+            <nav class="absolute z-30 flex flex-row items-center justify-between w-full h-24 px-4 bg-white border-b-2 border-gray-300 md:h-28 md:px-12">
+                <div class="flex justify-start">
+                    <img src="pictures/logo01.png" class="w-auto md:h-20 h-18" alt="Company Logo">
+                </div>
+                <div class="flex flex-row flex-wrap items-center justify-center invisible text-gray-900 uppercase md:space-x-3 lg:visible pro:hidden">
+                    <a href="#" class=" text-md  hover:text-[#00a7e0] focus:text-gray-400 focus:outline-none">home</a>
+                    <button type="button" class="uppercase hover:text-[#00a7e0] focus:text-gray-400" onclick="toggleElem('services_nav')">our services<i class="px-2 fas fa-caret-down" style="color:#FF1493;"></i></button>    
+                    <button type="button" class="uppercase hover:text-[#00a7e0] focus:text-gray-400" onclick="toggleElem('portfolio_nav')">our portfolio<i class="px-2 fas fa-caret-down" style="color:#FF1493;"></i></button>    
+                    <button type="button" class="uppercase hover:text-[#00a7e0] focus:text-gray-400" onclick="toggleElem('connect_nav')">let's connect<i class="px-2 fas fa-caret-down" style="color:#FF1493;"></i></button>    
+                    <button type="button" class="uppercase hover:text-[#00a7e0] focus:text-gray-400" onclick="toggleElem('account_nav')">my account<i class="px-2 fas fa-caret-down" style="color:#FF1493;"></i></button>       
+                </div>
+                <div class="block md:space-x-20 lg:hidden pro:block pro:pr-10">
+                    <button type="button" class="text-gray-700 text-xl focus:text-[#00a7e0] active:hover:text-[#00a7e0] focus:outline-none" onclick="toggleElem('sm_navi')">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
+            <div id="services_nav" class="absolute z-50 hidden p-2 text-gray-900 uppercase -translate-x-12 bg-white border-4 border-yellow-600 rounded-xl text-md top-20 right-96 h-96 w-52">
+                <ul class="p-2 space-y-4 text-center">
+                    <li><a href="wedding.html" class="hover:text-[#00a7e0]">wedding video editing</a></li>
+                    <li><a href="corporate.html"class="hover:text-[#00a7e0]">corporate video editing</a></li>
+                    <li><a href="family.html"class="hover:text-[#00a7e0]">family video editing</a></li>
+                    <li><a href="youtube.html"class="hover:text-[#00a7e0]">youtube content video editing</a></li>
+                    <li><a href="logo-animation.html"class="hover:text-[#00a7e0]">logo animation</a></li>
+                    <li><a href="virtualStage.html"class="hover:text-[#00a7e0]">virtual stage</a></li>
+                    <li><a href="graphic.html"class="hover:text-[#00a7e0]"> graphic design</a></li>
+                </ul>
+            </div>
+            <div id="portfolio_nav" class="absolute z-50 hidden p-2 text-gray-900 uppercase bg-white border-4 border-yellow-600 rounded-xl text-md top-20 right-72 h-96 w-52">
+                <ul class="p-2 text-center">
+                    <li><a href=""class="hover:text-[#00a7e0]">our work</a></li>
+                </ul>
+            </div>
+            <div id="connect_nav" class="absolute z-50 hidden p-2 text-gray-900 uppercase bg-white border-4 border-yellow-600 rounded-xl text-md top-20 right-32 h-96 w-52">
+                <ul class="p-2 text-center ">
+                    <li><a href="faqs.html" class="hover:text-[#00a7e0]">faqs</a></li>
+                </ul>
+            </div>
+            <div id="account_nav" class="absolute z-50 hidden w-48 p-2 text-gray-900 uppercase bg-white border-4 border-yellow-600 rounded-xl text-md top-20 right-6 h-96">
+                <ul class="p-2 space-y-4 text-center">
+                    <li><a href="register1.html" class="hover:text-[#00a7e0]"></a>register</li>
+                    <li><a href="login1.html" class="hover:text-[#00a7e0]"></a>login</li>
+                </ul>
+            </div>
+            <nav id="sm_navi" class="absolute inset-0 z-50 hidden w-full h-full p-2 text-gray-900 text-md md:text-xl">
+                <div class="flex flex-col items-center justify-start w-auto h-auto p-6 bg-white border-2 border-yellow-600 shadow-xl rounded-xl">
+                    <div class="flex flex-row items-center justify-between w-full">
+                        <img src="pictures/logo01.png" class="w-auto h-8" alt="Company Logo">
+                        <button type="button" class=" text-xl focus:text-[#00a7e0] active:hover:text-[#00a7e0] focus:outline-none" onclick="toggleElem('sm_navi')">
+                            <i class="fas fa-times-circle"></i>
+                        </button>
+                    </div>
+                    <div class="flex flex-col items-start justify-start w-full p-2 mt-2 space-y-2 uppercase border-t-2 border-b-2 border-yellow-600 border-dashed">
+                        <a href="#" class="hover:text-[#00a7e0] focus:outline-none">home</a>
+                        <button type="button" class="w-full uppercase text-left focus:bg-[#00a7e0] focus:text-white" onclick="toggleElem('services_snav')">our services<i class="px-2 fas fa-caret-down" style="color:#FF1493;"></i></button>
+                            <div id="services_snav" class="hidden">
+                                <ul id="services_snav" class="space-y-2 list-disc list-inside ">
+                                    <li><a href="wedding.html">wedding video editing</a></li>
+                                    <li><a href="corporate.html">corporate video editing</a></li>
+                                    <li><a href="family.html">family video editing</a></li>
+                                    <li><a href="youtube.html">youtube content video editing</a></li>
+                                    <li><a href="logo-animation.html">logo animation</a></li>
+                                    <li><a href="virtualStage.html">virtual stage</a></li>
+                                    <li><a href="graphic.html"> graphic design</a></li>
+                                </ul>
+                            </div>
+                        <button type="button" class="w-full uppercase text-left rounded-lg focus:bg-[#00a7e0] focus:text-white" onclick="toggleElem('portfolio_snav')">our portfolio<i class="px-2 fas fa-caret-down" style="color:#FF1493;"></i></button>
+                            <div id="portfolio_snav" class="hidden">
+                                <ul class="list-disc list-inside">
+                                    <li><a href="">our work</a></li>
+                                </ul>
+                            </div>
+                        <button type="button" class="w-full uppercase text-left rounded-lg focus:bg-[#00a7e0] focus:text-white" onclick="toggleElem('connect_snav')">let's connect<i class="px-2 fas fa-caret-down" style="color:#FF1493;"></i></button>
+                            <div id="connect_snav" class="hidden">
+                                <ul class="list-disc list-inside">
+                                    <li><a href="faqs.html">faqs</a></li>
+                                </ul>
+                            </div>
+                        <button type="button" class="w-full uppercase text-left rounded-lg focus:bg-[#00a7e0] focus:text-white" onclick="toggleElem('account_snav')">my account<i class="px-2 fas fa-caret-down" style="color:#FF1493;"></i></button>
+                            <div id="account_snav" class="hidden">
+                                <ul class="list-disc list-inside">
+                                    <li><a href="register1.html"></a>register</li>
+                                    <li><a href="login1.html"></a>login</li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+        <section id="navigation" class="absolute z-10 hidden w-screen p-6 bg-white">
+            <div class="flex flex-col">
+                <a href="landing.html"
+                    class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
+                    <span>Home</span>
+                </a>
+                <a href="#" class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
+                    <span class="">Video Editing Services</span>
+                </a>
+                <a href="#" class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
+                    <span class="">Our Work</span>
+                </a>
+                <a href="#" class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
+                    <span class="">View Pricing</span>
+                </a>
+                <a href="#" class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
+                    <span class="">My Account</span>
+                </a>
+                <a href="#" class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
+                    <span class="">Shop</span>
+                </a>
+                <a href="#" class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
+                    <span class="">Contact</span>
+                </a>
+                <a href="#" class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
+                    <span class="">Blog</span>
+                </a>
+            </div>
+        </section>
+
+            <section class="flex items-center justify-center w-full bg-center h-96 md:h-screen md:bg-cover"
+                style="background-image: url('pictures/wedding/ring.jpg')">
+            </section>
+
+            <section class="flex flex-col items-center justify-center px-16 py-8 text-gray-900 md:px-64">
+                <div class="flex flex-col items-center justify-center space-y-8 text-center">
+                    <h2 class="text-3xl font-extrabold uppercase font-aladin md:text-6xl md:pt-12"> Wedding Video Editing</h2>
+                    <img class="h-auto w-96" src="pictures/wedding/wedding-divider.png">
+                    <p class="text-xl">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+                    </p>
+                </div>
+
+            </section>
+
+            <section class="flex items-center justify-center px-4 py-12 md:px-64">
+                <div class="grid w-full h-full grid-cols-1 gap-12 text-center md:grid-cols-3">
+                    <div class="space-y-8">
+                        <div class="flex flex-col items-center justify-center space-y-4">
+                            <img src="pictures/wedding/photoshoot2.png" alt="reedit" class="w-auto border-8 border-yellow-100 rounded-xl md:h-48 md:m-6 h-28">
+                            <h2 class="text-xl font-bold text-gray-800 uppercase font-aladin"> Wedding Videographers</h2>
+                            <p class="px-4 text-md">
+                                Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum
+                                cupiditate veritatis in accusamus.
+                            </p>
+                        </div>
+                        <div class="flex items-center justify-center">
+                            <button class="flex items-center justify-center h-12 bg-yellow-300 border-b-4 border-gray-300 opacity-90 rounded-xl w-52">
+                                <h2 class="text-xl font-semibold text-white uppercase">Read More</h2>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="space-y-8">
+                        <div class="flex flex-col items-center justify-center space-y-4">
+                            <img src="pictures/wedding/couple2.png" alt="reedit" class="w-auto border-8 border-yellow-100 rounded-xl md:h-48 md:m-6 h-28">
+                            <h2 class="text-xl font-bold text-gray-800 uppercase font-aladin"> Newly Weds</h2>
+                            <p class="px-4 text-md">
+                                Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum
+                                cupiditate veritatis in accusamus.
+                            </p>
+                        </div>
+                        <div class="flex items-center justify-center">
+                            <button class="flex items-center justify-center h-12 bg-yellow-300 border-b-4 border-gray-300 opacity-90 rounded-xl w-52">
+                                <h2 class="text-xl font-semibold text-white uppercase">Read More</h2>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="space-y-8">
+                        <div class="flex flex-col items-center justify-center space-y-4">
+                            <img src="pictures/wedding/dance2.png" alt="reedit" class="w-auto border-8 border-yellow-100 rounded-xl opacity-90 md:h-48 md:m-6 h-28">
+                            <h2 class="text-xl font-bold text-gray-800 uppercase font-aladin"> Re-edit existing videos</h2>
+                            <p class="px-4 text-md">
+                                Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum
+                                cupiditate veritatis in accusamus.
+                            </p>
+                        </div>
+                        <div class="flex items-center justify-center">
+                            <button class="flex items-center justify-center h-12 bg-yellow-300 border-b-4 border-gray-300 opacity-90 rounded-xl w-52">
+                                <h2 class="text-xl font-semibold text-white uppercase">Read More</h2>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="flex flex-col items-center justify-center py-8 text-gray-900">
+                <div class="flex flex-col items-center justify-center px-16 space-y-8 text-center md:px-64">
+                    <h2 class="text-3xl font-bold uppercase md:text-5xl font-aladin"> Start Now</h2>
+                    <p class="text-xl">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+
+                <div class="grid w-full h-full grid-cols-1 px-4 py-12 text-center md:px-64 md:grid-rows-3">
+                        <div class="flex flex-col items-center justify-center space-y-4 md:flex-row">
+                            <div>
+                                <iframe
+                                src="https://player.vimeo.com/video/151266342?color=0c88dd&title=0&byline=0&portrait=0&badge=0"
+                                class="md:w-96 h-80 w-80" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+                                allowfullscreen></iframe>
+                            </div>
+                            <div>
+                                <h2 class="text-xl font-bold text-gray-800 uppercase font-aladin"> We edit videos that reflects your
+                                    style</h2>
+                                <p class="px-4 text-md md:px-32">
+                                        Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum
+                                        cupiditate veritatis in accusamus quisquam. Lorem ipsum dolor sit amet consect
+                                        adipisicing elit.
+                                        Possimus magnam voluptatum cupiditate veritatis in accusamus quisquam.
+                                </p>
+                            </div>
+                            <div>
+                            <button class="flex items-center justify-center h-12 bg-yellow-300 border-b-4 border-gray-300 opacity-90 rounded-xl w-52">
+                                <h2 class="text-xl font-semibold text-white uppercase">Start Project</h2>
+                            </button>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col items-center justify-center space-y-4 md:flex-row">
+                            <div>
+                                <iframe
+                                src="https://player.vimeo.com/video/151266342?color=0c88dd&title=0&byline=0&portrait=0&badge=0"
+                                class="md:w-96 h-80 w-80" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+                                allowfullscreen></iframe>
+                            </div>
+                            <div>
+                                <h2 class="text-xl font-bold text-gray-800 uppercase font-aladin">FAST DELIVERY OF YOUR WEDDING VIDEOS</h2>
+                                <p class="px-4 text-md md:px-32">
+                                        Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum
+                                        cupiditate veritatis in accusamus quisquam. Lorem ipsum dolor sit amet consect
+                                        adipisicing elit.
+                                        Possimus magnam voluptatum cupiditate veritatis in accusamus quisquam.
+                                </p>
+                            </div>
+                            <div>
+                            <button class="flex items-center justify-center h-12 bg-yellow-300 border-b-4 border-gray-300 opacity-90 rounded-xl w-52">
+                                <h2 class="text-xl font-semibold text-white uppercase">Check our Prices</h2>
+                            </button>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col items-center justify-center space-y-4 md:flex-row">
+                            <div>
+                                <iframe
+                                src="https://player.vimeo.com/video/151266342?color=0c88dd&title=0&byline=0&portrait=0&badge=0"
+                                class="md:w-96 h-80 w-80" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+                                allowfullscreen></iframe>
+                            </div>
+                            <div>
+                                <h2 class="text-xl font-bold text-gray-800 uppercase font-aladin"> WE OFFER BULK CORPORATE DISCOUNTS</h2>
+                                <p class="px-4 text-md md:px-32">
+                                        Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum
+                                        cupiditate veritatis in accusamus quisquam. Lorem ipsum dolor sit amet consect
+                                        adipisicing elit.
+                                        Possimus magnam voluptatum cupiditate veritatis in accusamus quisquam.
+                                </p>
+                            </div>
+                            <div>
+                            <button class="flex items-center justify-center h-12 bg-yellow-300 border-b-4 border-gray-300 opacity-90 rounded-xl w-52">
+                                <h2 class="text-xl font-semibold text-white uppercase">Request Quote</h2>
+                            </button>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
+            <section class="flex flex-col items-center justify-center px-8 py-12 space-y-12 md:px-64">
+                <div class="flex flex-col items-center justify-center space-y-8">
+                    <h2 class="text-3xl font-bold uppercase md:text-5xl font-aladin">
+                        Features</h2>
+                    <p class="text-xl text-justify md:text-center">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+                <div class="grid w-full h-full grid-cols-1 md:grid-cols-2"> 
+                    <img src="pictures/wedding/pic1.png" alt="wedding" class="w-auto h-auto">
+                    <img src="pictures/wedding/pic2.png" alt="wedding" class="w-auto h-auto">
+                    <img src="pictures/wedding/pic3.png" alt="wedding" class="w-auto h-auto">
+                    <img src="pictures/wedding/pic4.png" alt="wedding" class="w-auto h-auto">
+                </div>
+            </section>
+            
+            <section class="flex flex-col items-center justify-center px-12 py-12 text-gray-900 md:px-32">
+                <div class="flex flex-col items-center justify-center py-8 space-y-8 text-center">
+                    <h2 class="text-3xl font-extrabold text-gray-900 uppercase md:text-5xl font-aladin"> Why Choose Us</h2>
+                    <img src="pictures/wedding/wedding-divider.png" alt="divider" class="h-18 w-96">
+                </div>
+                <div class="flex flex-col items-center justify-center px-6 space-y-12 md:items-start md:justify-start md:px-32">
+                    <div class="space-y-4">
+                        <h2 class="text-2xl font-bold text-center md:text-justify font-aladin">
+                            Lorem ipsum dolor?
+                        </h2>
+                        <p class="text-md">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                    <div class="space-y-4">
+                        <h2 class="text-2xl font-bold text-center md:text-justify font-aladin">
+                            Lorem ipsum dolor?
+                        </h2>
+                        <p class="text-md">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                    <div class="space-y-4">
+                        <h2 class="text-2xl font-bold text-center md:text-justify font-aladin">
+                            Lorem ipsum dolor?
+                        </h2>
+                        <p class="text-md">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            
+            <section class="flex flex-col items-center justify-center w-full text-white bg-center md:px-64 md:bg-cover"
+                style="background-image: url('pictures/wedding/flower.png')">
+                <div class="flex flex-col items-center justify-center px-16 py-12 space-y-12">
+                    <h2 class="text-2xl font-extrabold text-justify uppercase md:text-5xl font-aladin">
+                        How to film better wedding video footage
+                    </h2>
+                    <p class="text-justify md:px-44 md:text-xl text-md">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                    </p>
+                </div>
+            </section>
+
+            <footer class="flex items-center justify-center py-4 bg-yellow-100 bg-cover md:px-32">
+                <div class="flex flex-col items-center justify-center space-y-4">
+                    <div>
+                        <img src="pictures/logo-1.png" alt="logo" class="w-auto h-14">
+                    </div>
+                    <div
+                        class="flex flex-col items-center justify-center space-x-0 text-xl font-semibold md:flex-row md:space-x-8">
+                        <a href="#" class="text-gray-900 hover:underline hover:text-gray-700">
+                            <span class="uppercase">Home</span>
+                        </a>
+                        <a href="#" class="text-gray-900 hover:underline hover:text-gray-700">
+                            <span class="uppercase">Our Services</span>
+                        </a>
+                        <a href="#" class="text-gray-900 hover:underline hover:text-gray-700">
+                            <span class="uppercase"> Our Portfolio </span>
+                        </a>
+                        <a href="#" class="text-gray-900 hover:underline hover:text-gray-700">
+                            <span class="uppercase"> Let's Connect </span>
+                        </a>
+                        <a href="#" class="text-gray-900 hover:underline hover:text-gray-700">
+                            <span class="uppercase">Your Project</span>
+                        </a>
+                    </div>
+                    <div class="flex flex-row items-center justify-center space-x-8 text-lg">
+                        <img src="pictures/wedding/Groupfb.png" alt="fb" class="w-auto h-10">
+                        <img src="pictures/wedding/Groupyt.png" alt="yt" class="w-auto h-10">
+                        <img src="pictures/wedding/Groupvimeo.png" alt="vm" class="w-auto h-12 mt-2">
+                        <img src="pictures/wedding/Grouplast.png" alt="be" class="w-auto h-12">
+                    </div>
+                    <div class="flex flex-col items-center justify-center space-y-2">
+                        <h2 class="font-semibold text-md"> Make safe payment with</h2>
+                        <img src="pictures/footer-paypal.png" alt="paypal" class="w-auto h-12">
+                    </div>
+                </div>
+            </footer>
+        </section>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin=" anonymous "></script>
+        <script src="./script.js "></script>
+        <script>
+            function toggleElem(paramID)
+                {
+                    document.getElementById(paramID).classList.toggle('hidden');
+                    document.getElementById(paramID).classList.toggle('block');
+                }
+        </script>
+    </body>
+
+
+</html>

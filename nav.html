@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>HOME</title>
+        
+        <!-- Styles -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+        <link href="/build/tailwind.css" rel="stylesheet"> 
+        <link href="/build/breakpoint.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <nav class="absolute z-30 flex flex-row items-center justify-between w-full h-24 px-4 bg-white border-b-2 border-gray-300 md:h-28 md:px-12">
+            <div class="flex justify-start">
+                <img src="pictures/logo01.png" class="w-auto md:h-20 h-18" alt="Company Logo">
+            </div>
+            <div class="flex flex-row flex-wrap items-center justify-center invisible text-gray-900 uppercase md:space-x-3 lg:visible pro:hidden">
+                <a href="#" class=" text-md  hover:text-[#00a7e0] focus:text-gray-400 focus:outline-none">home</a>
+                <button type="button" class="uppercase hover:text-[#00a7e0] focus:text-gray-400" onclick="toggleElem('services_nav')">our services<i class="px-2 fas fa-caret-down" style="color:#FF1493;"></i></button>    
+                <button type="button" class="uppercase hover:text-[#00a7e0] focus:text-gray-400" onclick="toggleElem('portfolio_nav')">our portfolio<i class="px-2 fas fa-caret-down" style="color:#FF1493;"></i></button>    
+                <button type="button" class="uppercase hover:text-[#00a7e0] focus:text-gray-400" onclick="toggleElem('connect_nav')">let's connect<i class="px-2 fas fa-caret-down" style="color:#FF1493;"></i></button>    
+                <button type="button" class="uppercase hover:text-[#00a7e0] focus:text-gray-400" onclick="toggleElem('account_nav')">my account<i class="px-2 fas fa-caret-down" style="color:#FF1493;"></i></button>       
+            </div>
+            <div class="block md:space-x-20 lg:hidden pro:block pro:pr-10">
+                <button type="button" class="text-gray-700 text-xl focus:text-[#00a7e0] active:hover:text-[#00a7e0] focus:outline-none" onclick="toggleElem('sm_navi')">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+        <div id="services_nav" class="absolute z-50 hidden p-2 text-gray-900 uppercase -translate-x-12 bg-white border-4 border-yellow-600 rounded-xl text-md top-20 right-96 h-96 w-52">
+            <ul class="p-2 space-y-4 text-center">
+                <li><a href="wedding.html" class="hover:text-[#00a7e0]">wedding video editing</a></li>
+                <li><a href="corporate.html"class="hover:text-[#00a7e0]">corporate video editing</a></li>
+                <li><a href="family.html"class="hover:text-[#00a7e0]">family video editing</a></li>
+                <li><a href="youtube.html"class="hover:text-[#00a7e0]">youtube content video editing</a></li>
+                <li><a href="logo-animation.html"class="hover:text-[#00a7e0]">logo animation</a></li>
+                <li><a href="virtualStage.html"class="hover:text-[#00a7e0]">virtual stage</a></li>
+                <li><a href="graphic.html"class="hover:text-[#00a7e0]"> graphic design</a></li>
+            </ul>
+        </div>
+        <div id="portfolio_nav" class="absolute z-50 hidden p-2 text-gray-900 uppercase bg-white border-4 border-yellow-600 rounded-xl text-md top-20 right-72 h-96 w-52">
+            <ul class="p-2 text-center">
+                <li><a href=""class="hover:text-[#00a7e0]">our work</a></li>
+            </ul>
+        </div>
+        <div id="connect_nav" class="absolute z-50 hidden p-2 text-gray-900 uppercase bg-white border-4 border-yellow-600 rounded-xl text-md top-20 right-32 h-96 w-52">
+            <ul class="p-2 text-center ">
+                <li><a href="faqs.html" class="hover:text-[#00a7e0]">faqs</a></li>
+            </ul>
+        </div>
+        <div id="account_nav" class="absolute z-50 hidden w-48 p-2 text-gray-900 uppercase bg-white border-4 border-yellow-600 rounded-xl text-md top-20 right-6 h-96">
+            <ul class="p-2 space-y-4 text-center">
+                <li><a href="register1.html" class="hover:text-[#00a7e0]"></a>register</li>
+                <li><a href="login1.html" class="hover:text-[#00a7e0]"></a>login</li>
+            </ul>
+        </div>
+        <nav id="sm_navi" class="absolute inset-0 z-50 hidden w-full h-full p-2 text-gray-900 text-md md:text-xl">
+            <div class="flex flex-col items-center justify-start w-auto h-auto p-6 bg-white border-2 border-yellow-600 shadow-xl rounded-xl">
+                <div class="flex flex-row items-center justify-between w-full">
+                    <img src="pictures/logo01.png" class="w-auto h-8" alt="Company Logo">
+                    <button type="button" class=" text-xl focus:text-[#00a7e0] active:hover:text-[#00a7e0] focus:outline-none" onclick="toggleElem('sm_navi')">
+                        <i class="fas fa-times-circle"></i>
+                    </button>
+                </div>
+                <div class="flex flex-col items-start justify-start w-full p-2 mt-2 space-y-2 uppercase border-t-2 border-b-2 border-yellow-600 border-dashed">
+                    <a href="#" class="hover:text-[#00a7e0] focus:outline-none">home</a>
+                    <button type="button" class="w-full uppercase text-left focus:bg-[#00a7e0] focus:text-white" onclick="toggleElem('services_snav')">our services<i class="px-2 fas fa-caret-down" style="color:#FF1493;"></i></button>
+                        <div id="services_snav" class="hidden">
+                            <ul id="services_snav" class="space-y-2 list-disc list-inside ">
+                                <li><a href="wedding.html">wedding video editing</a></li>
+                                <li><a href="corporate.html">corporate video editing</a></li>
+                                <li><a href="family.html">family video editing</a></li>
+                                <li><a href="youtube.html">youtube content video editing</a></li>
+                                <li><a href="logo-animation.html">logo animation</a></li>
+                                <li><a href="virtualStage.html">virtual stage</a></li>
+                                <li><a href="graphic.html"> graphic design</a></li>
+                            </ul>
+                        </div>
+                    <button type="button" class="w-full uppercase text-left rounded-lg focus:bg-[#00a7e0] focus:text-white" onclick="toggleElem('portfolio_snav')">our portfolio<i class="px-2 fas fa-caret-down" style="color:#FF1493;"></i></button>
+                        <div id="portfolio_snav" class="hidden">
+                            <ul class="list-disc list-inside">
+                                <li><a href="">our work</a></li>
+                            </ul>
+                        </div>
+                    <button type="button" class="w-full uppercase text-left rounded-lg focus:bg-[#00a7e0] focus:text-white" onclick="toggleElem('connect_snav')">let's connect<i class="px-2 fas fa-caret-down" style="color:#FF1493;"></i></button>
+                        <div id="connect_snav" class="hidden">
+                            <ul class="list-disc list-inside">
+                                <li><a href="faqs.html">faqs</a></li>
+                            </ul>
+                        </div>
+                    <button type="button" class="w-full uppercase text-left rounded-lg focus:bg-[#00a7e0] focus:text-white" onclick="toggleElem('account_snav')">my account<i class="px-2 fas fa-caret-down" style="color:#FF1493;"></i></button>
+                        <div id="account_snav" class="hidden">
+                            <ul class="list-disc list-inside">
+                                <li><a href="register1.html"></a>register</li>
+                                <li><a href="login1.html"></a>login</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </nav>
+        <script>
+            function toggleElem(paramID)
+                {
+                    document.getElementById(paramID).classList.toggle('hidden');
+                    document.getElementById(paramID).classList.toggle('block');
+                }
+        </script>
+    </body>
+</html>
